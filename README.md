@@ -36,60 +36,59 @@ A simple E-Commerce web application built with **Laravel** that allows users to:
    ```bash
    git clone https://github.com/your-username/laravel-ecommerce.git
    cd laravel-ecommerce
-Install dependencies
-
-bash
-Copy
-Edit
+## Install dependencies
+```
 composer install
 npm install && npm run dev  # Optional, if using Laravel Mix for assets
-Set up environment
+```
 
+## Set up environment
+```
 bash
-Copy
-Edit
 cp .env.example .env
 php artisan key:generate
-Set up the database
+```
+
+## Set up the database
 
 Configure your .env with DB credentials.
 
 Then run:
-
+```
 bash
-Copy
-Edit
 php artisan migrate
-Seed dummy users/products (optional)
+```
 
+## Seed dummy users/products (optional)
+```
 bash
-Copy
-Edit
 php artisan db:seed
-Start the development server
+```
 
+## Start the development server
+```
 bash
-Copy
-Edit
 php artisan serve
-🔐 Authentication
+```
+
+## 🔐 Authentication
 Laravel Breeze or Laravel UI is used for user authentication.
 
 To install Breeze (if not yet installed):
-
+```
 bash
-Copy
-Edit
 composer require laravel/breeze --dev
 php artisan breeze:install
 npm install && npm run dev
 php artisan migrate
-📁 Folder Structure
-app/Models/Product.php – Product Model
+```
 
-app/Http/Controllers/ProductController.php – Controller for CRUD
+## 📁 Folder Structure
+- app/Models/Product.php – Product Model
 
-routes/web.php – Routes
+- app/Http/Controllers/ProductController.php – Controller for CRUD
 
-resources/views/ – Blade views for product pages and auth
+- routes/web.php – Routes
+
+- resources/views/ – Blade views for product pages and auth
 
